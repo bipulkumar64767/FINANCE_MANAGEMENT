@@ -1,0 +1,23 @@
+services:
+  - type: web_service
+    name: finance-management-backend
+    env: node
+    plan: starter
+    branch: main
+    buildCommand: cd backend && npm install
+    startCommand: cd backend && npm start
+    envVars:
+      - key: MONGODB_URI
+        sync: false
+      - key: NODE_ENV
+        value: production
+      - key: HOST
+        value: '0.0.0.0'
+  - type: static_site
+    name: finance-management-frontend
+    branch: main
+    buildCommand: npm install && npm run build
+    publishPath: dist
+    envVars:
+      - key: VITE_API_URL
+        value: 'https://finance-management-backend.onrender.com/api'
