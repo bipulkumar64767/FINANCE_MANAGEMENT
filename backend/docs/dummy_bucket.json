@@ -1,0 +1,27 @@
+{
+  "projectId": "REPLACE_WITH_PROJECT_ID",
+  "bucket": "REPLACE_WITH_BUCKET_NAME",
+  "basePath": "uploads/documents/",
+  "exampleFiles": [
+    {
+      "object_key": "mock-1680000000000-aadhaar-front.pdf",
+      "file_name": "aadhaar_front.pdf",
+      "mime_type": "application/pdf",
+      "file_size": 234567,
+      "uploaded_by": "<userId>",
+      "application_id": "<optional_application_id>",
+      "customer_id": "<customer_profile_id>",
+      "created_at": "2026-01-01T10:00:00.000Z"
+    },
+    {
+      "object_key": "mock-1680000001000-pan.pdf",
+      "file_name": "pan.pdf",
+      "mime_type": "application/pdf",
+      "file_size": 123456,
+      "uploaded_by": "<userId>",
+      "application_id": null,
+      "customer_id": "<customer_profile_id>",
+      "created_at": "2026-01-02T12:30:00.000Z"
+    }
+  ]
+}
