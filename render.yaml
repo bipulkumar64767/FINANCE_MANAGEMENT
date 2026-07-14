@@ -4,8 +4,8 @@ services:
     env: node
     plan: starter
     branch: main
-    buildCommand: cd backend && npm install
-    startCommand: cd backend && npm install && npm start
+    buildCommand: cd backend && npm ci --production
+    startCommand: cd backend && npm start
     envVars:
       - key: MONGODB_URI
         sync: false
